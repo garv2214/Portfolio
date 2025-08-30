@@ -31,10 +31,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(96, 165, 250, 0.2)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
         navbar.style.boxShadow = 'none';
     }
 });
@@ -248,7 +248,8 @@ document.head.appendChild(notificationStyles);
 const navStyles = document.createElement('style');
 navStyles.textContent = `
     .nav-link.active {
-        color: #2563eb !important;
+        color: #60a5fa !important;
+        text-shadow: 0 0 15px rgba(96, 165, 250, 0.8) !important;
     }
     
     .nav-link.active::after {
